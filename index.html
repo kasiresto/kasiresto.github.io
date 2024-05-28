@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir Restoran</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kasir Restoran</h1>
+        <div id="menu">
+            <h2>Daftar Menu</h2>
+            <div class="menu-item">
+                <span>Ayam</span>
+                <span>Rp 15,000</span>
+                <div class="quantity-control">
+                    <button onclick="updateQuantity('Ayam', -1)">-</button>
+                    <input type="number" id="Ayam" value="0" readonly>
+                    <button onclick="updateQuantity('Ayam', 1)">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <span>Ayam & Nasi</span>
+                <span>Rp 18,000</span>
+                <div class="quantity-control">
+                    <button onclick="updateQuantity('Ayam & Nasi', -1)">-</button>
+                    <input type="number" id="Ayam & Nasi" value="0" readonly>
+                    <button onclick="updateQuantity('Ayam & Nasi', 1)">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <span>Kentang Goreng</span>
+                <span>Rp 10,000</span>
+                <div class="quantity-control">
+                    <button onclick="updateQuantity('Kentang Goreng', -1)">-</button>
+                    <input type="number" id="Kentang Goreng" value="0" readonly>
+                    <button onclick="updateQuantity('Kentang Goreng', 1)">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <span>Cola</span>
+                <span>Rp 10,000</span>
+                <div class="quantity-control">
+                    <button onclick="updateQuantity('Cola', -1)">-</button>
+                    <input type="number" id="Cola" value="0" readonly>
+                    <button onclick="updateQuantity('Cola', 1)">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <span>Aqua</span>
+                <span>Rp 5,000</span>
+                <div class="quantity-control">
+                    <button onclick="updateQuantity('Aqua', -1)">-</button>
+                    <input type="number" id="Aqua" value="0" readonly>
+                    <button onclick="updateQuantity('Aqua', 1)">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <span>Ice Cream</span>
+                <span>Rp 8,000</span>
+                <div class="quantity-control">
+                    <button onclick="updateQuantity('Ice Cream', -1)">-</button>
+                    <input type="number" id="Ice Cream" value="0" readonly>
+                    <button onclick="updateQuantity('Ice Cream', 1)">+</button>
+                </div>
+            </div>
+        </div>
+        <button onclick="cetakStruk()">Cetak Struk</button>
+        <div id="struk">
+            <h2>Struk Pembayaran</h2>
+            <pre id="outputStruk"></pre>
+			<br>
+			<p>© Aryakirana</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
